@@ -1,0 +1,5 @@
+/* 
+   '=' - recebe
+   '==' - mesmo valor
+   '===' - idêntico 
+*/
