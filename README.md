@@ -1,2 +1,2 @@
 # Curso-de-JavaScript
- Material de estudo do curso de JavaScript
+ Meu material de estudo do curso de JavaScript
