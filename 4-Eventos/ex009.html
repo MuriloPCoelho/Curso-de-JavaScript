@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calculator</title>
+
+<style>
+    body{
+        background-color: whitesmoke;
+        font: normal 15pt arial;
+    }
+    div#res{
+        margin-top: 20px; /*forma certa de espaçar linhas*/
+    }
+    
+</style>
+
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type = 'number' name = 'box1' id = 'box1'>
+    <input type = 'number' name = 'box2' id = 'box2'>
+    <input type = 'button' value = 'Somar' onclick = 'somar()'>
+    <div id='res'> Resultado</div>
+
+<script>
+    function somar() {
+        var box1 = window.document.getElementById('box1')
+        var box2 = window.document.querySelector('input#box2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(box1.value) //necessário transformar de string para number
+        var n2 = Number(box2.value) //necessário transformar de string para number
+        var s = n1 + n2
+        res.innerHTML = (`O resulado da soma de ${n1} + ${n2} é igual a: <strong> ${s} </strong>`)
+    }
+    
+</script>
+
+</body>
+</html>
