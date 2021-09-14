@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+<style>
+body{
+    background-color: rgb(44, 44, 44);
+    font: normal 15pt arial;
+    color:beige
+
+
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+     <h1>Iniciando estudos com DOM</h1>
+     <p>Aqui vai o resultado</p>
+     <p>Aprendendo usar o <strong>DOM</strong></p>
+     <div id='mensagem'>Clique em mim</div>
+     <div name='aviso'>Não clique em mim</div>
+     <div class='caguei'>Foda-se</div>
+     <div id='atualId'>O ID melhor de se usar!</div>
+     <div class='atualClass'>A Class melhor de se usar!</div>
+
+<script>
+    window.document.write('Olá, mundo! </br>')
+    window.document.write(`${window.document.charset} </br> `)
+    window.document.write(`${window.navigator.appName} </br>`)
+    window.document.write(`${window.document.URL} </br>`)
+//como adicionar elementos por JS
+    var p1 = window.document.getElementsByTagName('p')[0] //zero sempre se refere à primeira tag
+    var p2 = window.document.getElementsByTagName('p')[1]
+    window.document.write(`Está escrito: ${p1.innerText}... novamente </br>`)
+    window.document.write(`E no segundo parágrafo está escrito: ${p2.innerText}... novamente </br>`)
+    window.document.write(p2.innerHTML) //.innerHTML leva as childs 
+//como buscar elementos por Tag
+    p1.style.color = 'blue'
+    p2.style.color = 'red'
+    var corpo = window.document.body
+    corpo.style.background = 'black'
+//como mudar elementos com JS
+    var d = window.document.getElementById('mensagem')
+    d.style.background = 'white'
+    d.style.color = 'black'
+    d.innerText = 'Fora Bolsonaro!' //pode ser escrito como: window.document.getElementById('mensagem').innerText = ('Fora Bolsonaro!')
+//como buscar elementos por Id
+    var D = window.document.getElementsByName('aviso')[0]
+    D.innerText = 'Fica Bolsonaro!'
+    D.style.background = 'blue'
+    D.style.color = 'yellow'
+//como buscar elementos por Name
+    var caguei = window.document.getElementsByClassName('caguei')[0]
+    caguei.innerText = 'Quero que todo mundo se exploda!'
+    caguei.style.background = 'purple'
+    caguei.style.color = 'orange'
+//como buscar elementos por Class
+    var bestId = window.document.querySelector('div#atualId') //quando for Id, usa-se '#'
+    var bestClass = window.document.querySelector('div.atualClass')//quando for Class, usa-se '.'
+    bestId.style.color = 'pink'
+    bestClass.style.color = 'green'
+//como buscar usando o querySelector
+</script>
+
+</body>
+</html>
