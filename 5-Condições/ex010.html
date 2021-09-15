@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color:rgb(31, 31, 31);
+        color: white;
+        font:normal 15pt arial;
+    }
+    
+
+</style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Qual a velocidade que você está dirigindo? <input type="number"  id='vel'> km/h
+    <input type='button' value='verificar' onclick="calcular()"> <!--//    Sempre são em forma de txt//    -->
+    <div id='msg'> </div>
+    
+<script>
+    
+   function calcular(){
+    var vel = window.document.querySelector('input#vel')
+    var nvel = Number(vel.value) //muito necessário passar o valor para número 
+    var msg = window.document.querySelector('div#msg')
+    msg.innerHTML = `<p>Sua velocidade atual é de: <strong> ${nvel}km/h' </strong></p>`
+    
+    if (nvel > 60){msg.innerHTML += '<p>Você está multado por excesso de velocidade!</p>'}
+   }
+</script>
+
+</body>
+</html>

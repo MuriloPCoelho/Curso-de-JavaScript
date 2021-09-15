@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicador de Nacionalidade</title>
+
+<style>
+    body{
+        background-color: rgb(37, 37, 37);
+        font: normal 15pt arial;
+        color: whitesmoke;
+    }
+    div#msg{
+        margin-top: 20px;
+    }
+
+</style>
+
+</head>
+<body>
+    <h1>Indicador de Nacionalidade</h1>
+    Em que país você nasceu? <input type="text" id='pais'>
+    <input type='button' value='Analisar' id='anatxt' onclick='analisar()'>
+    <div id='res'>  </div>
+
+<script>
+    function analisar() {
+        var res = window.document.querySelector('div#res')
+        var pais = window.document.querySelector('input#pais')
+        var p = (pais.value) //isso aqui é um inferno
+
+        if (p == 'Brasil') {res.innerHTML = '<p>Então você é <strong> brasileiro </strong> </p>'}
+        if (p == 'França') {res.innerHTML = '<p>Então você é <strong> francês </strong> </p>'}
+        if (p == 'Canadá') {res.innerHTML = '<p>Então você é <strong> canadense </strong> </p>'}
+        if (p == 'Japão') {res.innerHTML = '<p>Então você é <strong> japonês </strong> </p>'}
+        if (p == 'Inglaterra') {res.innerHTML = '<p>Então você é <strong> inglês </strong> </p>'}
+        if (p == 'Portugal') {res.innerHTML = '<p>Então você é <strong> português </strong> </p>'}
+        if (p == 'Argentina') {res.innerHTML = '<p>Então você é <strong> argentino </strong> </p>'}
+        if (p == 'Espanha') {res.innerHTML = '<p>Então você é <strong> espanhol </strong> </p>'}
+        if (p == 'China') {res.innerHTML = '<p>Então você é <strong> chinês </strong> </p>'}
+        if (p == 'Coreia') {res.innerHTML = '<p>Então você é <strong> coreano </strong> </p>'}
+        if (p == 'Índia') {res.innerHTML = '<p>Então você é <strong> indiano </strong> </p>'}
+        if (p == 'Chile') {res.innerHTML = '<p>Então você é <strong> chileno </strong> </p>'}
+        if (p == 'Cuba') {res.innerHTML = '<p>Então você é <strong> cubano </strong> </p>'}
+        if (p == 'México') {res.innerHTML = '<p>Então você é <strong> mexicano </strong> </p>'}
+        if (p == 'Estados Unidos') {res.innerHTML = '<p>Então você é <strong> estadunidense </strong> </p>'}
+        if (p == 'Rússia') {res.innerHTML = '<p>Então você é <strong> russo </strong> </p>'}
+        if (p == 'Israel') {res.innerHTML = '<p>Então você é <strong> israelense </strong> </p>'}
+        if (p == 'Noruega') {res.innerHTML = '<p>Então você é <strong> norueguês </strong> </p>'}
+        if (p == 'Holanda') {res.innerHTML = '<p> Então você é <strong> holandês </strong> </p>'}
+        if (p == 'África do Sul') {res.innerHTML = '<p> Então você é <strong> sul africano </strong> </p>'}
+        if (p == 'Suiça') {res.innerHTML = '<p> Então você é <strong> suiço </strong> </p>'}
+        if (p == 'Jamaica') {res.innerHTML = '<p> Então você é <strong> jamaicano </strong> </p>'}
+    }
+
+</script>
+
+</body>
+</html>
