@@ -1,0 +1,91 @@
+body{
+    background: rgb(78, 145, 156);
+    font: normal 10pt arial;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+section{
+    padding: 10px;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+div#vertical{
+    transform: rotate(-90deg);
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    width: 60px;
+    position:relative;
+    left: 17px;
+    bottom: 8.4px;
+}
+
+div#pri{
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
+    margin-right: 5px;
+}
+
+div#seg{
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
+    margin-right: 5px;
+}
+
+div#ter{
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
+    margin-right: 5px;
+}
+
+div#med{
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.329);
+}
+
+input{
+    width: 100px;
+}
+
+div#butt{
+    text-align: center;
+    margin-top: 10px;
+}
+
+div#res{
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
